@@ -1,3 +1,12 @@
+function swapCurrency() {
+    var fromCurrency = document.getElementById('fromCurrency');
+    var toCurrency = document.getElementById('toCurrency');
+    var temp = fromCurrency.value;
+    fromCurrency.value = toCurrency.value;
+    toCurrency.value = temp;
+    convertCurrency(); // Update converted amount after swapping
+}
+
 function convertCurrency() {
     var fromCurrency = document.getElementById('fromCurrency').value;
     var toCurrency = document.getElementById('toCurrency').value;
